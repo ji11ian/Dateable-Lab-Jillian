@@ -1,12 +1,11 @@
-class Dateable {
-  constructor(age) {
-    this.age = age;
-  }
-  
-  getYoungestPerson() {
-    return Math.floor(this.age / 2 + 7);
-  }
+public class Dateable {
+ 
+   public static void main(String[] args) {
+     
+        Scanner age = new Scanner(System.in);
+        System.out.println("Enter your age: ");
+        int yourage = age.nextInt();
+        int minage = (yourage/2) + 7;
+        System.out.println(yourage + " year olds should data somebody who is at least " + minage + " years old.");
+    }
 }
-
-const myAge = new Dateable(16);
-console.log(`${myAge.age}-year olds should date somebody who is at least ${myAge.getYoungestPerson()} years old.`);
